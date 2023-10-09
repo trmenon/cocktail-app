@@ -1,0 +1,86 @@
+.cocktail-wrapper {
+    width: 100vw;
+    height: calc(100vh - 66px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .loader-canvas {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(248, 241, 241, 0.9);
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cocktail-header {
+        width: 100%;
+        height: 48px;
+        border-bottom: 1px solid #a200ff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        h3{
+            color: #10001a;
+            font-weight: 700;
+        }
+        .right-wing {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            h6{
+                background-color: #413647;
+                color: #FFF;
+                padding: 8px 16px;
+                border-radius: 16px;
+                font-weight: 400;
+            }
+        }
+        
+    }
+    .cocktail-image {
+        width: 100%;
+        background-color: #dbc6e7;
+        padding: 16px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            border-radius: 24px;
+            padding: 12px;
+            border: 1px solid #a200ff
+        }
+    }
+    .cocktail-preparation {
+        width: 100%;
+        background-color: #dbc6e7;
+        padding: 16px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h6{
+            color: #570c80;
+            font-weight: 600;
+            text-align: center;
+        }
+        p {
+            color: #271331;
+            font-weight: 500;
+            text-align: center; 
+        }
+    }
+}
